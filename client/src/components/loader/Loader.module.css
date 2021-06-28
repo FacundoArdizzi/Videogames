@@ -1,0 +1,29 @@
+.loader {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: 10rem auto;
+}
+
+.loader > div {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 3rem .5rem;
+    border-radius: 50%;
+    background: rgb(230, 230, 230);
+    animation: loader .6s infinite alternate;
+}
+
+@keyframes loader{
+    to {
+        opacity: .1;
+        transform: translate3d(0, -1rem, 0);
+    }
+}
+
+.loader > div:nth-child(2) {
+    animation-delay: .2s;
+}
+.loader > div:nth-child(3) {
+    animation-delay: .4s;
+}

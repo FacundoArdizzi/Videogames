@@ -1,0 +1,22 @@
+.sidebar {
+    width: 95%;
+    padding: 0 0.75rem;
+}
+.sidebar h5{
+    font-size: 2.75rem;
+    font-weight: 600;
+    color: rgb(240, 240, 240)
+}
+.sidebar button {
+    display: block;
+    border: none;
+    background: transparent;
+    color: rgb(156, 156, 156);
+    font-weight: 300;
+    margin: 0.5rem;
+    
+}
+.sidebar button:hover {
+    color: rgb(240, 240, 240);
+    font-weight: 400;
+}

@@ -1,0 +1,25 @@
+.form {
+    display: flex;
+    margin: 0 1rem;
+    padding: 0.5rem;
+    background: #ffffff;
+    border-radius: 9999px;
+    width: 25rem;
+}
+
+.form input {
+    background: #ffffff;
+    border: none;
+    width: 90%;
+    border-right: 1px solid rgb(20, 20, 20);
+}
+.form input:focus{
+    outline: none;
+}
+
+.form button {
+    background: transparent;
+    border: transparent;
+    color: #1e1e1e;
+    transition: 0.25s;
+}

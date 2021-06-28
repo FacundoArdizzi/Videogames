@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.btns {
+    text-align: center;
+    margin: 2rem;
+}
+.btn {
+    border: none;
+    margin: 0 1.5rem;
+    font-size: 3.5rem;
+    color: rgb(240, 240, 240);
+}
+.btn:hover {
+    color: var(--color-gold);
+}

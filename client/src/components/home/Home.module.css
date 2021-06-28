@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 0.5rem;
+}
+.side {
+    width: 15%;
+    padding: 5px;
+}
+.cards {
+    width: 85%;
+}

@@ -1,0 +1,134 @@
+.form {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 1.5rem;
+    max-width: 70%;
+    margin: auto;
+    margin-top: 1rem;
+}
+.form h2 {
+    font-size: 3rem;
+    border-bottom: 1.5px solid #ffbf00;
+    margin: auto;
+    margin-bottom: 0.3rem;
+    width: 50%;
+}
+.form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+.form h5{
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 1rem;
+    font-stretch:narrower;
+}
+.form input {
+    background: transparent;
+    border: 1px solid #fafafa;
+    padding: 0.25rem;
+    font-size: 1rem;
+    color: whitesmoke;
+}
+.form textarea {
+    border: 1px solid #fafafa;
+    color: whitesmoke;
+    font-size: 1rem;
+    padding: 0.25rem;
+    width: 45%;
+    max-width: 45%;
+    height: 10rem;
+    max-height: 13rem;
+}
+.form label {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+/* ----- SELECTS ----- */
+.div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.select {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.select select {
+    width: 15rem;
+    padding: 0.25rem;
+    margin-bottom: 1rem;
+    color: whitesmoke;
+    border: 1px solid #fafafa;
+}
+.select option {
+    text-align: center;
+    font-weight: 300;
+}
+/* ----- SELECTED OPTIONS ----- */
+.ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+.ul > li {
+    list-style-type: none;
+    width: 10rem;
+    padding: .4rem;
+    margin: .5rem;
+    background: var(--color-grey);
+    border: 1.5px solid rgb(8, 8, 8);
+    border-radius: 1rem;
+}
+.ul > li > button {
+    font-size: 1.3rem;
+    float: right;
+    margin-top: -2px;
+    margin-right: 1px;
+    transition: color .3s;
+}
+.ul > li > button:hover {
+    color: var(--color-gold);
+}
+/* ----- BUTTONS ----- */
+.btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+}
+.btnCreate {
+    width: 10rem;
+    color: green;
+    border-radius: 0.5rem;
+    border: 1.5px solid green;
+    background: transparent;
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin: 1rem 1.5rem;
+    transition: all .5s;
+}
+.btnCreate:hover {
+    background: green;
+    color: whitesmoke;
+}
+.btnReset {
+    width: 10rem;
+    color: red;
+    border-radius: 0.5rem;
+    border: 1.5px solid red;
+    background: transparent;
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin: 1rem 1.5rem;
+    transition: all .5s;
+}
+.btnReset:hover {
+    background: red;
+    color: whitesmoke;
+}

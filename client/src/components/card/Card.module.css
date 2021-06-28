@@ -1,0 +1,41 @@
+.card {
+    display: inline-block; 
+    text-align: center;
+    background: var(--color-grey);
+    color: rgb(240, 240, 240);
+    max-width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 1rem;
+    transition: box-shadow .5s;
+}
+.card:hover {
+    box-shadow: 0px 0px 20px rgba(117, 117, 117, 0.719);
+}
+
+.card div {
+    background: var(--color-grey);
+}
+
+.card h5 {
+    background: var(--color-grey);
+    margin: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.card p {
+    background: var(--color-grey);
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+
+.card a {
+    color: rgb(240, 240, 240);
+    text-decoration: none;
+    transition: all .4s;
+}
+.card Link:hover {
+    color: var(--color-gold);
+    cursor: pointer;
+}
