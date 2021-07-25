@@ -9,17 +9,17 @@ import {connect} from 'react-redux'
 
 const NavBar = ({getGames}) => {
     const handleClick = () => {
+        getGames()
         if(window.location.href === 'http://localhost:3000/videogames') {
-            getGames()
+            window.location.reload()
         }
-        window.location.reload()
     }
     
     return (
         <div className={styles.nav}>
-            <button onClick={handleClick}>
+            <Link to='/videogames' onClick={handleClick}>
                 <FontAwesomeIcon icon={ faGamepad } className={styles.icon}/>
-            </button>
+            </Link>
             <SearchBar />
             <Link to="/create" className={styles.create}>
                 <span>Crate Your Own!</span>

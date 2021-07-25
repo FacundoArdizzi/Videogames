@@ -11,14 +11,6 @@ import sixth from '../../img/6.jpg'
 import styles from './LandingPage.module.css'
 
 const LandingPage = ({getGames}) => {
-
-    useEffect(() => {
-        async function bringGames () {
-            const response = await getGames()
-        }
-        bringGames()
-    }, []) 
-
     return (
         <div>
             <div className={styles.slider}>

@@ -22,7 +22,7 @@ const SideBar = ({filterByGender,orderAZ,orderZA,filterByOrigin,getGames,filtere
     return (
         <div className={styles.sidebar}>
             <div>
-                <h5>Genders</h5>
+                <h5>Genres</h5>
                 <button onClick={handleGenders} value='Strategy'>Strategy</button>
                 <button onClick={handleGenders} value='Action'>Action</button>
                 <button onClick={handleGenders} value='RPG'>RPG</button>

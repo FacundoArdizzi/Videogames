@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import { connect } from 'react-redux'
+import { useSelector } from 'react-redux'
 import DetailDB from './DetailDB';
 import DetailAPI from './DetailAPI'
 import Loader from '../loader/Loader'
@@ -8,7 +8,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLongArrowAltLeft } from '@fortawesome/free-solid-svg-icons'
 
 
-const DetailedCard = ({detailedGame}) => {
+const DetailedCard = () => {
+    const detailedGame = useSelector(state => state.detailedGame)
+    console.log(detailedGame)
     return (
         <div>
             <div>
@@ -24,7 +26,7 @@ const DetailedCard = ({detailedGame}) => {
                     </Link>
                 </div>
                 {
-                detailedGame == undefined ? <Loader /> : detailedGame.id.length > 8 ? <DetailDB game={detailedGame} /> : 
+                !detailedGame.id ? <Loader /> : detailedGame.id.length > 8 ? <DetailDB game={detailedGame} /> : 
                 <DetailAPI game={detailedGame} />
                 }
             </div>
@@ -32,13 +34,4 @@ const DetailedCard = ({detailedGame}) => {
     );
 }
 
-const mapStateToProps = (state) => {
-    return {
-        detailedGame: state.detailedGame,
-    }
-}
-
-export default connect(
-    mapStateToProps, 
-    null
-)(DetailedCard);
+export default DetailedCard;
